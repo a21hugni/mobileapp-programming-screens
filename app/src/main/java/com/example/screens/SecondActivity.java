@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class SecondActivity extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity  {
 
     TextView text;
 
@@ -15,5 +15,6 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         text = findViewById(R.id.textView);
+        text.setText(getIntent().getStringExtra("String"));
     }
 }
